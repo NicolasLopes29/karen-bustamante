@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+  margin: 0;
+  height: 3000px;
+  font-family: "Literata", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.counter-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.counter-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Progress bar */
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #f0f0f0;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* Progress circle */
+.progress-circle-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+}
+
+.progress-circle-bar {
+  fill: none;
+  stroke: black;
+  stroke-width: 5;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-background {
+  fill: transparent;
+  stroke: #ededed;
+  stroke-width: 5;
+  stroke-dasharray: none;
+}
+
+.scroll-to-top {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.scroll-to-top svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  transition: all 0.1s ease;
+}

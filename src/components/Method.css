@@ -1,0 +1,56 @@
+.method {
+    background-color: #f3f4f6;
+    padding: 4rem 0;
+  }
+  
+  .method-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .method-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1f2937;
+  }
+  
+  .method-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .method-section {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .method-section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  
+  .method-section-description {
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .method-grid {
+      flex-direction: column;
+    }
+  }
+  
+  
